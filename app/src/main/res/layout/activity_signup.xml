@@ -7,23 +7,22 @@
     android:layout_height="match_parent"
     android:background="#D91212"
     android:backgroundTint="#CA1B1B"
-    tools:context=".LogInActivity">
+    tools:context=".SignUpActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/registrati2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#E70000"
+        android:onClick="registratiButtonClicked"
         android:text="REGISTRATI"
         android:textColor="#FAFAFA"
         android:textColorLink="#E70000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextText5"
@@ -50,10 +49,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/passwordText"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -117,20 +116,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tiziodefault" />
 
-    <Switch
-        android:id="@+id/switch1"
+    <Button
+        android:id="@+id/tornalogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:backgroundTint="#F80000"
+        android:onClick="gobackloginButtonClicked"
+        android:text="TORNA AL LOGIN"
+        android:textColorHint="#FF0101"
+        android:textColorLink="#FB0000"
+        app:layout_constraintBottom_toTopOf="@+id/registrati2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="566dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
